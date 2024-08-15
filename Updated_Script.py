@@ -7,7 +7,7 @@ from requests.packages.urllib3.util.retry import Retry
 
 # Load the dataset
 movie_df = pd.read_csv('movie_fact_table.csv')
-api_key = "c2832a70078ebc121b1aa62ac410fe78"
+
 
 def requests_retry_session(retries=3, backoff_factor=0.3, status_forcelist=(500, 502, 504), session=None):
     session = session or requests.Session()
